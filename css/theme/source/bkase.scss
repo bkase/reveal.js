@@ -12,7 +12,7 @@ $selectionBackgroundColor: $base;
 
 $mainColor: $darkgrey;
 $mainFontSize: 31px;
-$mainFont: 'Helvetica Neue', Helvetica, sans-serif;
+$mainFont: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
 
 $headingMargin: 0 0 50px 0;
 $headingColor: $base;
@@ -54,6 +54,7 @@ $heading4Size: 1.0em;
   // emphasis means use accent
   em {
     font-style: normal;
+    font-weight: 400;
     color: $accent;
   }
 
@@ -68,10 +69,51 @@ $heading4Size: 1.0em;
   }
 }
 
-// first slide
-.reveal .slides {
-  section:first-child {
-    // TODO: Special case first slide
+::selection {
+  background: $base;
+  color: $lightgrey;
+}
+::-moz-selection {
+  background: $base;
+  color: $lightgrey;
+}
+
+// terminal slide
+
+// controls
+.terminal .reveal .controls {
+  .navigate-down {
+    border-top-color: $lightgrey;
+  }
+  .navigate-right {
+    border-left-color: $lightgrey;
+  }
+  .navigate-up {
+    border-bottom-color: $lightgrey;
+  }
+  .navigate-left {
+    border-right-color: $lightgrey;
+  }
+}
+.reveal .controls {
+  .navigate-down {
+    transition: border-top-color 0.5s, opacity 0.5s;
+  }
+  .navigate-right {
+    transition: border-left-color 0.5s, opacity 0.5s;
+  }
+  .navigate-up {
+    transition: border-bottom-color 0.5s, opacity 0.5s;
+  }
+  .navigate-left {
+    transition: border-right-color 0.5s, opacity 0.5s;
+  }
+}
+
+// colors
+.terminal .reveal .slides section {
+  p, h1, h2, h3, h4, h5, h6 {
+    color: $lightgrey;
   }
 }
 

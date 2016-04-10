@@ -6,7 +6,7 @@ body {
   background-color: #f0f6f5; }
 
 .reveal {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 31px;
   font-weight: normal;
   color: #5f6665; }
@@ -282,11 +282,15 @@ body {
 .reveal p, .reveal ul, .reveal ol {
   line-height: 1.8; }
 
+.reveal table, .reveal th {
+  font-weight: 400; }
+
 .reveal .slides {
   text-align: left; }
 
 .reveal em {
   font-style: normal;
+  font-weight: 400;
   color: #FF7943; }
 
 .reveal section img {
@@ -296,3 +300,38 @@ body {
 
 .reveal table {
   margin: 0px; }
+
+::selection {
+  background: #2aa198;
+  color: #f0f6f5; }
+
+::-moz-selection {
+  background: #2aa198;
+  color: #f0f6f5; }
+
+.terminal .reveal .controls .navigate-down {
+  border-top-color: #f0f6f5; }
+
+.terminal .reveal .controls .navigate-right {
+  border-left-color: #f0f6f5; }
+
+.terminal .reveal .controls .navigate-up {
+  border-bottom-color: #f0f6f5; }
+
+.terminal .reveal .controls .navigate-left {
+  border-right-color: #f0f6f5; }
+
+.reveal .controls .navigate-down {
+  transition: border-top-color 0.5s, opacity 0.5s; }
+
+.reveal .controls .navigate-right {
+  transition: border-left-color 0.5s, opacity 0.5s; }
+
+.reveal .controls .navigate-up {
+  transition: border-bottom-color 0.5s, opacity 0.5s; }
+
+.reveal .controls .navigate-left {
+  transition: border-right-color 0.5s, opacity 0.5s; }
+
+.terminal .reveal .slides section p, .terminal .reveal .slides section h1, .terminal .reveal .slides section h2, .terminal .reveal .slides section h3, .terminal .reveal .slides section h4, .terminal .reveal .slides section h5, .terminal .reveal .slides section h6 {
+  color: #f0f6f5; }
