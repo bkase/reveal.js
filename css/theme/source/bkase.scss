@@ -50,6 +50,11 @@ $heading4Size: 1.0em;
     font-weight: 200;
   }
 
+  blockquote {
+    box-shadow: none;
+    line-height: 1.8;
+  }
+
   p, ul, ol {
     line-height: 1.8;
   }

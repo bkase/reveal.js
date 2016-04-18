@@ -279,6 +279,10 @@ body {
 .reveal p, .reveal ul, .reveal ol, .reveal td {
   font-weight: 200; }
 
+.reveal blockquote {
+  box-shadow: none;
+  line-height: 1.8; }
+
 .reveal p, .reveal ul, .reveal ol {
   line-height: 1.8; }
 
