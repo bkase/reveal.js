@@ -98,16 +98,16 @@ $heading4Size: 1.0em;
 
 // controls
 .terminal .reveal .controls {
-  .navigate-down {
+  .navigate-down, .navigate-down.enabled {
     border-top-color: $lightgrey;
   }
-  .navigate-right {
+  .navigate-right, .navigate-right.enabled {
     border-left-color: $lightgrey;
   }
-  .navigate-up {
+  .navigate-up, .navigate-up.enabled {
     border-bottom-color: $lightgrey;
   }
-  .navigate-left {
+  .navigate-left, .navigate-left.enabled {
     border-right-color: $lightgrey;
   }
 }
@@ -147,6 +147,13 @@ $heading4Size: 1.0em;
   p, h1, h2, h3, h4, h5, h6 {
     color: $lightgrey;
   }
+  a {
+    background-color: $lightgrey;
+  }
+}
+.terminal .reveal .progress span {
+  background-color: $lightgrey;
+  transition: background-color 0.5s;
 }
 
 // code

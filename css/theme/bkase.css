@@ -313,16 +313,16 @@ body {
   background: #2aa198;
   color: #f0f6f5; }
 
-.terminal .reveal .controls .navigate-down {
+.terminal .reveal .controls .navigate-down, .terminal .reveal .controls .navigate-down.enabled {
   border-top-color: #f0f6f5; }
 
-.terminal .reveal .controls .navigate-right {
+.terminal .reveal .controls .navigate-right, .terminal .reveal .controls .navigate-right.enabled {
   border-left-color: #f0f6f5; }
 
-.terminal .reveal .controls .navigate-up {
+.terminal .reveal .controls .navigate-up, .terminal .reveal .controls .navigate-up.enabled {
   border-bottom-color: #f0f6f5; }
 
-.terminal .reveal .controls .navigate-left {
+.terminal .reveal .controls .navigate-left, .terminal .reveal .controls .navigate-left.enabled {
   border-right-color: #f0f6f5; }
 
 .reveal .controls .navigate-down, .reveal .controls .navigate-down.enabled {
@@ -351,6 +351,13 @@ body {
 
 .terminal .reveal .slides section p, .terminal .reveal .slides section h1, .terminal .reveal .slides section h2, .terminal .reveal .slides section h3, .terminal .reveal .slides section h4, .terminal .reveal .slides section h5, .terminal .reveal .slides section h6 {
   color: #f0f6f5; }
+
+.terminal .reveal .slides section a {
+  background-color: #f0f6f5; }
+
+.terminal .reveal .progress span {
+  background-color: #f0f6f5;
+  transition: background-color 0.5s; }
 
 .reveal pre {
   box-shadow: none;
